@@ -6,7 +6,6 @@ Console.WriteLine("Unsorted Array");
 foreach (var item in data)
 {
     Console.Write($"{item} ");
-
 }
 Console.WriteLine();
 QuickSort(data, 0, data.Count() - 1);
@@ -15,7 +14,6 @@ Console.WriteLine("Sorted Array in Ascending Order: ");
 foreach (var item in data)
 {
     Console.Write($"{item} ");
-
 }
 
 
@@ -32,7 +30,6 @@ int Partition(int[] data, int low, int high)
             i++;
             swap(data, i, j);
         }
-
     }
 
     swap(data, i + 1, high);
@@ -56,7 +53,6 @@ void QuickSort(int[] data, int low, int high)
         QuickSort(data, low, pivot - 1);
         QuickSort(data, pivot + 1, high);
     }
-
 }
 
 
